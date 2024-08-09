@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: beige;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="noticias.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="noticia.js" defer></script>
+    <script src="http://127.0.0.1:5500/modulo-01/tela%20inicial/tela_incial.html"></script>
+
+    <title>New Bombeiros</title>
+</head>
+
+<body>
+    <div class="main-content">
+
+        <header class="header">
+            <img src="header_bombeiro.jpg" class="background-image">
+            <div class="header__info">
+                <button id="to-go-back-home" style="background-color: rgb(136, 136, 136); border: none; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                      <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/>
+                    </svg>
+                  </button>
+                <h1 class="content_info">Nós Bombeiros salvamos mais de 50 animais por semana e 100 vidas por mês</h1>
+            </div>
+        </header>
+
+        <section class="content-map">
+            <fieldset class="criterion">
+                <legend>Informe seus dados</legend> 
+                <label for="firstname">Nome Inteiro</label>
+                <input type="text" name="firstname">
+                <label for="cep">informe seu CEP</label>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7/inputmask.min.js"></script>
+                <div class="input-container">
+                  <input type="text" name="cep">
+                <svg class="icons-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM620-280q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z"/>
+                </svg>
+                </div>
+            </fieldset>
+            <div id="map"></div>
+        </section>
+        <p class="data-info"> Informe seus dados para analisarmos o historico de chamados proximo a sua região </p>
+    </div>
+</body>
+
+</html>
