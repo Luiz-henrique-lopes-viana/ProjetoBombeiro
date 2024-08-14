@@ -1,4 +1,4 @@
-const map = L.map('map').setView([-23.9680, -46.3282], 16);
+const map = L.map('map').setView([-23.544216, -46.635914], 16);
 const layer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -6,7 +6,7 @@ const layer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 layer.addTo(map);
 
-const marker = L.marker([-23.9680, -46.3282]);
+const marker = L.marker([-23.544216, -46.635914]);
 marker.addTo(map);
 
 document.addEventListener("DOMContentLoaded", function() {

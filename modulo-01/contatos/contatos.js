@@ -10,6 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'http://127.0.0.1:5500/modulo-01/tela%20inicial/tela_incial.html';
       });
     } else {
-      console.log("Botão 'to-go-back-home' não encontrado.");
+      console.log("O Botão 'to-go-back-home' não foi encontrado. Favor verificar.");
     }
   });
